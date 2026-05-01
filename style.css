@@ -1,0 +1,105 @@
+/* Importation de la police Inter depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Variables de couleurs globales */
+:root {
+    --deep-blue: #1a365d;
+    --slate-gray: #4a5568;
+    --light-bg: #f7fafc;
+    --white: #ffffff;
+    --hover-blue: #2b6cb0;
+}
+
+/* Reinitialisation et corps de page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--slate-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: var(--deep-blue);
+    transition: all 0.3s ease-in-out;
+    padding: 12px 0;
+}
+
+.navbar-brand img {
+    height: 40px; /* Taille du logo */
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--white) !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #cbd5e0 !important;
+    transform: translateY(-2px);
+}
+
+/* Section Hero avec image de fond et filtre sombre */
+.hero-section {
+    /* Remplacez LIEN_IMAGE_ECOLE_ICI par le lien de votre image */
+    background: linear-gradient(rgba(26, 54, 93, 0.7), rgba(26, 54, 93, 0.7)), 
+                url('school.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* Design des cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons */
+.btn-custom {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--hover-blue);
+    color: var(--white);
+}
+
+.main-content {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.notes-area {
+    min-height: 350px;
+    resize: vertical;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.footer {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
