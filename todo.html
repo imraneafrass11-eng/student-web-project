@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Etudiant - Taches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="school logo.avif" alt="Logo">
+                Portail Etudiant
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="courses.html">Cours</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold active" href="todo.html">Taches</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="notes.html">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-5 shadow-sm border-0">
+                    <h2 class="text-center mb-2 text-dark fw-bold">Gestionnaire de Taches</h2>
+                    <p class="text-center text-muted mb-4">Organisez votre travail et validez vos objectifs.</p>
+                    
+                    <div class="input-group mb-4">
+                        <input type="text" id="taskInput" class="form-control form-control-lg bg-light" placeholder="Que devez-vous reviser ou preparer ?">
+                        <button class="btn btn-custom px-4" type="button" id="addTaskBtn">Ajouter</button>
+                    </div>
+
+                    <ul class="list-group list-group-flush bg-transparent" id="taskList">
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Projet Scolaire. Tous droits reserves.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
